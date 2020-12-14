@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+  <xs:schema xmlns="http://www.uktransplant.org.uk/XMLschema/forms/160/internal/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdb="http://xmlns.oracle.com/xdb" targetNamespace="http://www.uktransplant.org.uk/XMLschema/forms/160/internal/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="ntxd_kidney_pancreas_registration" xdb:defaultTable="UKT_0069_KID_PANC_REG.xsd">
+  <xs:complexType xdb:SQLType="UKT_0069_KID_PANC_REG.xsd_T">
+  <xs:all>
+  <xs:element name="recip_id" type="recip_id" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">UKT NUMBER (Recip ID)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="centre_code" type="unit_id_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">TRANSPLANT CENTRE</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="surname" type="person_name_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*SURNAME</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="forename" type="person_name_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*FORENAME</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hospital_no" type="hospital_no_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">HOSPITAL NO.</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="address" type="address_line_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">ADDRESS</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="address_line2" type="address_line_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">(Address)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="address_line3" type="address_line_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">(Address)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="address_line4" type="address_line_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">(Address)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="postcode" type="postcode_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*POSTCODE</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="telephone" type="telephone_no_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">TELEPHONE 1</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="telephone2" type="telephone_no_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">TELEPHONE 2</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="date_of_birth" type="date_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*DATE OF BIRTH</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="sex" type="sex_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*SEX</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="cmv_status" type="test_result" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*CMV STATUS</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hcv_status" type="test_result" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*HCV STATUS</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hbv_status" type="test_result" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">HBV STATUS</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hiv_status" type="test_result" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">HIV STATUS</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="group_status" type="nhs_group" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*GROUP STATUS</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="nationality" type="country" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*NATIONALITY (Country Of Nationality)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="country_of_residence" type="country" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*COUNTRY OF RESIDENCE</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="nhs_number" type="nhs_no_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">NEW NHS NUMBER</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="special_instructions" type="note_text_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">SPECIAL INSTRUCTIONS (Please do NOT use this to advise UKTSSA of VITAL patient information)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="start_date" type="date_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Start Date (Send this information as part of a local scheme ONLY!)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="paediatric_organ" type="domain_code_205" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">If you require to register a small adult as paediatric (for definition refer to Donor Organ Sharing Scheme Operating Principles issued by UK Transplant) then answer 'yes' otherwise leave field blank (</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="consider_for_en_bloc" type="yes_no_flag" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Consider for En-Bloc?</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="recipient_renal_register_no" type="renal_reg_num_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Recipient Renal Register No.</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="kidney_status" type="renal_status_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Patient Status</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="pancreas_status" type="renal_status_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Patient Status</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="organ_required" type="renal_organ_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">State which organs are required</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="weight_of_recipient_in_kg" type="weight_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Weight of recipient in Kg</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="height_of_recipient_in_cm" type="height_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Height of recipient in cm</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="dialysis_status" type="dialysis_status" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Dialysis status</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="receiving_dialysis_start_date" type="date_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">If receiving dialysis, starting date (Receiving Dialysis -start date)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="dialysis_centre_code" type="unit_id_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Dialysis centre</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="if_under_18_treated_as_paed" type="yes_no_flag" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">If under 18 years, is the recipient being treated in a Paediatric Unit?</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="primary_disease_code" type="renal_disease" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*Primary Disease</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="other_primary_disease" type="note_text_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">If other please specify</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="blood_group" type="blood_group" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*ABO (Blood Group)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="rhesus" type="rhesus" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*Rhesus</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="a2_suitable" type="yes_no_only_flag" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Is this patient suitable to receive a blood group A2 kidney? (A2 suitable)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="ethnic_origin" type="ethnic_origin" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">*Ethnic Origin</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="other_or_mixed_ethnic_origin" type="note_text_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">If Other or Mixed, please specify (Other or Mixed Ethnic Origin)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="cdc" type="yes_no_flag" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">CDC</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="fc" type="yes_no_flag" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">FC</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="elisa" type="yes_no_flag" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">ELISA</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="date_of_evaluation" type="date_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Date of evaluation of sensitisation</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="tcell_reaction_frequency" type="reaction_freq" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Relevant reaction frequency vs T/PBL % (Tcell Reaction Frequency)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="antibody_class_t_cells" type="antibody_class" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Antibody Class</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="bcell_reaction_frequency" type="reaction_freq" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Relevant reaction frequency vs B/CLL % (Bcell Reaction Frequency)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="antibody_class_b_cells" type="antibody_class" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Antibody Class</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="do_the_hla_in_sec_5_account" type="yes_no_flag" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">Do the HLA in Section 5 account for all?</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="t_pbl" type="residual_number" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">T/PBL(%)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="b_cll" type="residual_number" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">B/CLL(%)</xs:documentation> 
+  <xs:documentation source="required_note">YES</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hla" type="hla_type" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="recip_id">
+  <xs:restriction base="xs:positiveInteger">
+  <xs:totalDigits value="6" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="person_name_type">
+  <xs:restriction base="xs:string">
+  <xs:maxLength value="25" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="hospital_no_type">
+  <xs:restriction base="xs:string">
+  <xs:maxLength value="25" /> 
+  <xs:whiteSpace value="preserve" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="address_line_type">
+  <xs:restriction base="xs:string">
+  <xs:maxLength value="60" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="postcode_type">
+  <xs:restriction base="xs:string">
+  <xs:maxLength value="8" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="telephone_no_type">
+  <xs:restriction base="xs:string">
+  <xs:maxLength value="40" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sex_type">
+  <xs:annotation>
+  <xs:documentation source="coding_note">1 - 1-MALE 2 - 2-FEMALE</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="test_result">
+  <xs:annotation>
+  <xs:documentation source="coding_note">1 - 1-NEGATIVE 2 - 2-POSITIVE 6 - 6-TEST RESULT AWAITED/SENT FOR TESTING 7 - 7-NOT TESTED 8 - 8-NOT REPORTED 9 - 9-UNKNOWN</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="6" /> 
+  <xs:enumeration value="7" /> 
+  <xs:enumeration value="8" /> 
+  <xs:enumeration value="9" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="nhs_group">
+  <xs:annotation>
+  <xs:documentation source="coding_note">1 - Group 1 2 - Group 2 7 - Not Applicable 8 - Not Reported</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="7" /> 
+  <xs:enumeration value="8" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="country">
+  <xs:annotation>
+  <xs:documentation source="coding_note">1 - 1 UNITED KINGDOM 2 - 2 REPUBLIC OF IRELAND 201 - 201 NETHERLANDS 202 - 202 FRANCE 203 - 203 SWEDEN 204 - 204 GERMANY 205 - 205 MALTA 206 - 206 PORTUGAL 207 - 207 SPAIN 208 - 208 GREECE 209 - 209 TURKEY 210 - 210 SWITZERLAND 211 - 211 YUGOSLAVIA 212 - 212 CANADA 213 - 213 ISRAEL 214 - 214 NIGERIA 215 - 215 BOLIVIA 216 - 216 BAHRAIN 217 - 217 ABU DHABI 218 - 218 UGANDA 219 - 219 RUSSIAN FEDERATION 220 - 220 PAKISTAN 222 - 222 SAUDI ARABIA 223 - 223 POLAND 224 - 224 SINGAPORE 225 - 225 IRAN 226 - 226 ARGENTINA 227 - 227 HUNGARY 228 - 228 CZECH REPUBLIC 229 - 229 JAPAN 230 - 230 GIBRALTAR 231 - 231 MALAYSIA 232 - 232 MONACO 233 - 233 NORWAY 234 - 234 UNITED ARAB EMIRATES 235 - 235 AUSTRALIA 236 - 236 JORDAN 297 - 297 ITALY 301 - 301 BELGIUM 302 - 302 LUXEMBOURG 303 - 303 DENMARK 304 - 304 UNITED STATES OF AMERICA 306 - 306 ANGUILLA 307 - 307 AUSTRIA 308 - 308 BARBADOS 309 - 309 BRITISH VIRGIN ISLANDS 310 - 310 BULGARIA 312 - 312 FALKLAND ISLANDS 313 - 313 FINLAND 314 - 314 HONG KONG 315 - 315 ICELAND 317 - 317 MONSERRAT 318 - 318 NEW ZEALAND 319 - 319 ROMANIA 320 - 320 ST HELENA 321 - 321 TURKS AND CAICOS ISLANDS 322 - 322 USSR 323 - 323 LIECHTENSTEIN 324 - 324 EGYPT 325 - 325 INDIA 326 - 326 CHINA 327 - 327 CYPRUS 328 - 328 KUWAIT 329 - 329 VIETNAM 330 - 330 SRI LANKA 331 - 331 BANGLADESH 341 - 341 AFGHANISTAN 342 - 342 ALBANIA 343 - 343 ALGERIA 344 - 344 ANDORRA 345 - 345 ANGOLA 346 - 346 ANTIGUA AND BARBUDA 349 - 349 BAHAMAS 351 - 351 BELIZE 352 - 352 BENIN 353 - 353 BERMUDA 354 - 354 BHUTAN 356 - 356 BOSNIA-HERZEGOVINA 357 - 357 BOTSWANA 358 - 358 BRAZIL 359 - 359 BRUNEI 360 - 360 BURKINA-FASO 361 - 361 BURMA 362 - 362 BURUNDI 363 - 363 CAMBODIA 364 - 364 CAMEROON 366 - 366 CAPE VERDE 367 - 367 CAYMAN ISLANDS 368 - 368 CENTRAL AFRICAN REPUBLIC 369 - 369 CHAD 370 - 370 CHILE 371 - 371 COLUMBIA 372 - 372 COMMONWEALTH OF INDEPENDENT STATES (FORMER USSR) 373 - 373 COMOROS 374 - 374 CONGO 375 - 375 COSTA RICA 376 - 376 CROATIA 377 - 377 CUBA 378 - 378 DJIBOUTI 379 - 379 DOMINICA 380 - 380 DOMINICAN REPUBLIC 381 - 381 ECUADOR 382 - 382 EL SALVADOR 383 - 383 EQUATORIAL GUINEA 384 - 384 ERITREA 385 - 385 ESTONIA 386 - 386 ETHIOPIA 387 - 387 FIJI 388 - 388 GABON 389 - 389 GHANA 391 - 391 GRENADA 392 - 392 GUATAMALA 393 - 393 GUINEA 394 - 394 GUINEA-BISSAU 395 - 395 GUYANA 396 - 396 HAITI 397 - 397 HONDURAS 399 - 399 INDONESIA 401 - 401 IRAQ 404 - 404 JAMAICA 407 - 407 KENYA 408 - 408 KIRIBATI 409 - 409 LAOS 410 - 410 LATVIA 411 - 411 LEBANON 412 - 412 LESOTHO 413 - 413 LIBERIA 414 - 414 LIBYA 415 - 415 LITHUANIA 416 - 416 MACEDONIA 417 - 417 MADAGASCAR 418 - 418 MALAWI 420 - 420 MALDIVES 421 - 421 MALI 423 - 423 MARSHALL ISLANDS 424 - 424 MAURITANIA 425 - 425 MAURITIUS 426 - 426 MEXICO 427 - 427 MICRONESIA 429 - 429 MONGOLIA 431 - 431 MOROCCO 432 - 432 MOZAMBIQUE 433 - 433 NAMIBIA 434 - 434 NAURU 435 - 435 NEPAL 436 - 436 NICARAGUA 437 - 437 NIGER 439 - 439 NORTH KOREA 441 - 441 OMAN 443 - 443 PALUA 444 - 444 PANAMA 445 - 445 PAPUA NEW GUINEA 446 - 446 PARAGUAY 447 - 447 PERU 448 - 448 PHILIPPINES 449 - 449 PITCAIRN ISLAND 451 - 451 QATAR 452 - 452 RWANDA 453 - 453 SAN MARINO 454 - 454 SAO TOME E PRINCIPE 456 - 456 SENAGAL 457 - 457 SEYCHELLES 458 - 458 SIERRA LEONE 460 - 460 SLOVAKIA 461 - 461 SLOVENIA 462 - 462 SOLOMON ISLANDS 463 - 463 SOMALIA 464 - 464 SOUTH AFRICA 465 - 465 SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS 466 - 466 SOUTH KOREA 467 - 467 ST KITTS AND NEVIS 468 - 468 ST LUCIA 469 - 469 ST VINCENT AND THE GRENADINES 470 - 470 SUDAN 471 - 471 SURINAME 472 - 472 SWAZILAND 473 - 473 SYRIA 474 - 474 TAIWAN 475 - 475 TANZANIA 476 - 476 THAILAND 477 - 477 THE DEMOCRATIC REPUBLIC OF CONGO 478 - 478 THE GAMBIA 479 - 479 TOGO 480 - 480 TONGA 481 - 481 TRINIDAD AND TOBAGO 482 - 482 TUNISIA 484 - 484 TUVALU 487 - 487 URUGUAY 488 - 488 VANUATU 489 - 489 VATICAN CITY STATE 490 - 490 VENEZUELA 491 - 491 WESTERN SAMOA 492 - 492 YEMEN 494 - 494 ZAMBIA 495 - 495 ZIMBABWE 496 - 496 PALESTINE 497 - 497 SERBIA 498 - 498 Other, please specify 500 - 500 IVORY COAST (COTE D'IVOIRE) 501 - 501 UKRAINE 1115 - 1115 CHANNEL ISLANDS 28888 - 28888 UNSPECIFIED EU COUNTRY 28889 - 28889 UNSPECIFIED NON-EC COUNTRY 88888 - 88888 NOT REPORTED 99999 - 99999 COUNTRY UNKNOWN</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="201" /> 
+  <xs:enumeration value="202" /> 
+  <xs:enumeration value="203" /> 
+  <xs:enumeration value="204" /> 
+  <xs:enumeration value="205" /> 
+  <xs:enumeration value="206" /> 
+  <xs:enumeration value="207" /> 
+  <xs:enumeration value="208" /> 
+  <xs:enumeration value="209" /> 
+  <xs:enumeration value="210" /> 
+  <xs:enumeration value="211" /> 
+  <xs:enumeration value="212" /> 
+  <xs:enumeration value="213" /> 
+  <xs:enumeration value="214" /> 
+  <xs:enumeration value="215" /> 
+  <xs:enumeration value="216" /> 
+  <xs:enumeration value="217" /> 
+  <xs:enumeration value="218" /> 
+  <xs:enumeration value="219" /> 
+  <xs:enumeration value="220" /> 
+  <xs:enumeration value="222" /> 
+  <xs:enumeration value="223" /> 
+  <xs:enumeration value="224" /> 
+  <xs:enumeration value="225" /> 
+  <xs:enumeration value="226" /> 
+  <xs:enumeration value="227" /> 
+  <xs:enumeration value="228" /> 
+  <xs:enumeration value="229" /> 
+  <xs:enumeration value="230" /> 
+  <xs:enumeration value="231" /> 
+  <xs:enumeration value="232" /> 
+  <xs:enumeration value="233" /> 
+  <xs:enumeration value="234" /> 
+  <xs:enumeration value="235" /> 
+  <xs:enumeration value="236" /> 
+  <xs:enumeration value="297" /> 
+  <xs:enumeration value="301" /> 
+  <xs:enumeration value="302" /> 
+  <xs:enumeration value="303" /> 
+  <xs:enumeration value="304" /> 
+  <xs:enumeration value="306" /> 
+  <xs:enumeration value="307" /> 
+  <xs:enumeration value="308" /> 
+  <xs:enumeration value="309" /> 
+  <xs:enumeration value="310" /> 
+  <xs:enumeration value="312" /> 
+  <xs:enumeration value="313" /> 
+  <xs:enumeration value="314" /> 
+  <xs:enumeration value="315" /> 
+  <xs:enumeration value="317" /> 
+  <xs:enumeration value="318" /> 
+  <xs:enumeration value="319" /> 
+  <xs:enumeration value="320" /> 
+  <xs:enumeration value="321" /> 
+  <xs:enumeration value="322" /> 
+  <xs:enumeration value="323" /> 
+  <xs:enumeration value="324" /> 
+  <xs:enumeration value="325" /> 
+  <xs:enumeration value="326" /> 
+  <xs:enumeration value="327" /> 
+  <xs:enumeration value="328" /> 
+  <xs:enumeration value="329" /> 
+  <xs:enumeration value="330" /> 
+  <xs:enumeration value="331" /> 
+  <xs:enumeration value="341" /> 
+  <xs:enumeration value="342" /> 
+  <xs:enumeration value="343" /> 
+  <xs:enumeration value="344" /> 
+  <xs:enumeration value="345" /> 
+  <xs:enumeration value="346" /> 
+  <xs:enumeration value="349" /> 
+  <xs:enumeration value="351" /> 
+  <xs:enumeration value="352" /> 
+  <xs:enumeration value="353" /> 
+  <xs:enumeration value="354" /> 
+  <xs:enumeration value="356" /> 
+  <xs:enumeration value="357" /> 
+  <xs:enumeration value="358" /> 
+  <xs:enumeration value="359" /> 
+  <xs:enumeration value="360" /> 
+  <xs:enumeration value="361" /> 
+  <xs:enumeration value="362" /> 
+  <xs:enumeration value="363" /> 
+  <xs:enumeration value="364" /> 
+  <xs:enumeration value="366" /> 
+  <xs:enumeration value="367" /> 
+  <xs:enumeration value="368" /> 
+  <xs:enumeration value="369" /> 
+  <xs:enumeration value="370" /> 
+  <xs:enumeration value="371" /> 
+  <xs:enumeration value="372" /> 
+  <xs:enumeration value="373" /> 
+  <xs:enumeration value="374" /> 
+  <xs:enumeration value="375" /> 
+  <xs:enumeration value="376" /> 
+  <xs:enumeration value="377" /> 
+  <xs:enumeration value="378" /> 
+  <xs:enumeration value="379" /> 
+  <xs:enumeration value="380" /> 
+  <xs:enumeration value="381" /> 
+  <xs:enumeration value="382" /> 
+  <xs:enumeration value="383" /> 
+  <xs:enumeration value="384" /> 
+  <xs:enumeration value="385" /> 
+  <xs:enumeration value="386" /> 
+  <xs:enumeration value="387" /> 
+  <xs:enumeration value="388" /> 
+  <xs:enumeration value="389" /> 
+  <xs:enumeration value="391" /> 
+  <xs:enumeration value="392" /> 
+  <xs:enumeration value="393" /> 
+  <xs:enumeration value="394" /> 
+  <xs:enumeration value="395" /> 
+  <xs:enumeration value="396" /> 
+  <xs:enumeration value="397" /> 
+  <xs:enumeration value="399" /> 
+  <xs:enumeration value="401" /> 
+  <xs:enumeration value="404" /> 
+  <xs:enumeration value="407" /> 
+  <xs:enumeration value="408" /> 
+  <xs:enumeration value="409" /> 
+  <xs:enumeration value="410" /> 
+  <xs:enumeration value="411" /> 
+  <xs:enumeration value="412" /> 
+  <xs:enumeration value="413" /> 
+  <xs:enumeration value="414" /> 
+  <xs:enumeration value="415" /> 
+  <xs:enumeration value="416" /> 
+  <xs:enumeration value="417" /> 
+  <xs:enumeration value="418" /> 
+  <xs:enumeration value="420" /> 
+  <xs:enumeration value="421" /> 
+  <xs:enumeration value="423" /> 
+  <xs:enumeration value="424" /> 
+  <xs:enumeration value="425" /> 
+  <xs:enumeration value="426" /> 
+  <xs:enumeration value="427" /> 
+  <xs:enumeration value="429" /> 
+  <xs:enumeration value="431" /> 
+  <xs:enumeration value="432" /> 
+  <xs:enumeration value="433" /> 
+  <xs:enumeration value="434" /> 
+  <xs:enumeration value="435" /> 
+  <xs:enumeration value="436" /> 
+  <xs:enumeration value="437" /> 
+  <xs:enumeration value="439" /> 
+  <xs:enumeration value="441" /> 
+  <xs:enumeration value="443" /> 
+  <xs:enumeration value="444" /> 
+  <xs:enumeration value="445" /> 
+  <xs:enumeration value="446" /> 
+  <xs:enumeration value="447" /> 
+  <xs:enumeration value="448" /> 
+  <xs:enumeration value="449" /> 
+  <xs:enumeration value="451" /> 
+  <xs:enumeration value="452" /> 
+  <xs:enumeration value="453" /> 
+  <xs:enumeration value="454" /> 
+  <xs:enumeration value="456" /> 
+  <xs:enumeration value="457" /> 
+  <xs:enumeration value="458" /> 
+  <xs:enumeration value="460" /> 
+  <xs:enumeration value="461" /> 
+  <xs:enumeration value="462" /> 
+  <xs:enumeration value="463" /> 
+  <xs:enumeration value="464" /> 
+  <xs:enumeration value="465" /> 
+  <xs:enumeration value="466" /> 
+  <xs:enumeration value="467" /> 
+  <xs:enumeration value="468" /> 
+  <xs:enumeration value="469" /> 
+  <xs:enumeration value="470" /> 
+  <xs:enumeration value="471" /> 
+  <xs:enumeration value="472" /> 
+  <xs:enumeration value="473" /> 
+  <xs:enumeration value="474" /> 
+  <xs:enumeration value="475" /> 
+  <xs:enumeration value="476" /> 
+  <xs:enumeration value="477" /> 
+  <xs:enumeration value="478" /> 
+  <xs:enumeration value="479" /> 
+  <xs:enumeration value="480" /> 
+  <xs:enumeration value="481" /> 
+  <xs:enumeration value="482" /> 
+  <xs:enumeration value="484" /> 
+  <xs:enumeration value="487" /> 
+  <xs:enumeration value="488" /> 
+  <xs:enumeration value="489" /> 
+  <xs:enumeration value="490" /> 
+  <xs:enumeration value="491" /> 
+  <xs:enumeration value="492" /> 
+  <xs:enumeration value="494" /> 
+  <xs:enumeration value="495" /> 
+  <xs:enumeration value="496" /> 
+  <xs:enumeration value="497" /> 
+  <xs:enumeration value="498" /> 
+  <xs:enumeration value="500" /> 
+  <xs:enumeration value="501" /> 
+  <xs:enumeration value="1115" /> 
+  <xs:enumeration value="28888" /> 
+  <xs:enumeration value="28889" /> 
+  <xs:enumeration value="88888" /> 
+  <xs:enumeration value="99999" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="nhs_no_type">
+  <xs:restriction base="xs:string">
+  <xs:maxLength value="10" /> 
+  <xs:whiteSpace value="collapse" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="domain_code_205">
+  <xs:annotation>
+  <xs:documentation source="coding_note">2 - 2-YES 8 - 8-NOT REPORTED</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="8" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="renal_reg_num_type">
+  <xs:restriction base="xs:string" /> 
+  </xs:simpleType>
+  <xs:simpleType name="renal_status_type">
+  <xs:annotation>
+  <xs:documentation source="coding_note">11 - 11 ACTIVE - FOR MULTI ORGAN TRANSPLANT 12 - 12 ACTIVE - ROUTINE 14 - 14 ACTIVE - URGENT 21 - 21 SUSPENDED - UNTIL FURTHER NOTICE 25 - 25 SUSPENDED - PENDING TRANSPLANT NOTIFICATION 26 - 26 SUSPENDED - PENDING CONFIRMATION OF DEATH 42 - 42 REMOVED - REASON UNSPECIFIED 90 - 90 NOT REQUIRED</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="11" /> 
+  <xs:enumeration value="12" /> 
+  <xs:enumeration value="14" /> 
+  <xs:enumeration value="21" /> 
+  <xs:enumeration value="25" /> 
+  <xs:enumeration value="26" /> 
+  <xs:enumeration value="42" /> 
+  <xs:enumeration value="90" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="renal_organ_type">
+  <xs:annotation>
+  <xs:documentation source="coding_note">110 - 110 KIDNEY 50 - 50 PANCREAS 51 - 51 PANCREAS ISLETS 108 - 108 UNSPEC. KIDNEY AND ISLETS 109 - 109 UNSPEC. KIDNEY AND PANCREAS</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="110" /> 
+  <xs:enumeration value="50" /> 
+  <xs:enumeration value="51" /> 
+  <xs:enumeration value="108" /> 
+  <xs:enumeration value="109" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="weight_type">
+  <xs:restriction base="xs:float" /> 
+  </xs:simpleType>
+  <xs:simpleType name="height_type">
+  <xs:restriction base="xs:positiveInteger" /> 
+  </xs:simpleType>
+  <xs:simpleType name="dialysis_status">
+  <xs:annotation>
+  <xs:documentation source="coding_note">1 - 1 HAEMODIALYSIS 2 - 2 PERITONEAL DIALYSIS 3 - 3 NOT ON DIALYSIS 8 - 8 NOT REPORTED 9 - 9 UNKNOWN</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="3" /> 
+  <xs:enumeration value="8" /> 
+  <xs:enumeration value="9" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="unit_id_type">
+  <xs:restriction base="xs:string">
+  <xs:maxLength value="6" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="renal_disease">
+  <xs:annotation>
+  <xs:documentation source="coding_note">200 - 200 CHRONIC RENAL FAILURE, AETIOLOGY UNCERTAIN 210 - 210 GLOMERULONEPHRITIS, HISTOLOGICALLY NOT EXAMINED 211 - 211 SEVERE NEPHROTIC SYNDROME WITH FOCAL SCLEROSIS 212 - 212 IGA NEPHROPATHY 213 - 213 DENSE DEPOSIT DISEASE 214 - 214 MEMBRANOUS NEPHROPATHY 215 - 215 MEMBRANO-PROLIFERATIVE GLOMERULONEPHRITIS 216 - 216 RAPIDLY PROGRESSIVE GN WITHOUT SYSTEMIC DISEASE 217 - 217 FOCAL SEGMENTAL GLOMERULOSCLEROSIS WITH NEPHROTIC SYNDROME IN ADULTS 219 - 219 GLOMERULONEPHRITIS, HISTOLOGICALLY EXAMINED 220 - 220 PYELONEPHRITIS/INTERSTITIAL NEPHRITIS - CAUSE NOT SPECIFIED 221 - 221 PYELONEPHRITIS/INTERSTITIAL NEPHRITIS - ASSOCIATED WITH NEUROGENIC BLADDER 222 - 222 PYELONEPHRITIS/INTERSTITIAL NEPHRITIS - CON OBS UROPATHY WITH/WITHOUT V-U REFLUX 223 - 223 PYELONEPHRITIS/INTERSTITIAL NEPHRITIS - ACQUIRED OBSTRUCTIVE UROPATHY 224 - 224 PYELONEPHRITIS/INTERSTITIAL NEPHRITIS - V-U REFLUX WITHOUT OBSTRUCTION 225 - 225 PYELONEPHRITIS/INTERSTITIAL NEPHRITIS - UROLITHIASIS 229 - 229 PYELONEPHRITIS/INTERSTITIAL NEPHRITIS - OTHER CAUSE 230 - 230 TUBULO INTERSTITIAL NEPHRITIS - (NOT PYELONEPHRITIS) 231 - 231 NEPHROPATHY DUE TO ANALGESIC DRUGS 232 - 232 NEPHROPATHY DUE TO CIS-PLATINUM 233 - 233 NEPHROPATHY DUE TO CYCLOSPORIN A 234 - 234 LEAD INDUCED NEPHROPATHY (INTERSTITIAL) 239 - 239 NEPHROPATHY CAUSED BY OTHER SPECIFIC DRUG 240 - 240 CYSTIC KIDNEY DISEASE-TYPE UNSPECIFIED 241 - 241 POLYCYSTIC KIDNEYS, ADULT TYPE (DOMINANT TYPE) 242 - 242 POLYCYSTIC KIDNEYS, INFANTILE (RECESSIVE) 243 - 243 MEDULLARY CYSTIC DISEASE, INC NEPHRONOPHTHISIS 249 - 249 CYSTIC KIDNEY DISEASE - OTHER SPECIFIED TYPE 250 - 250 HEREDITARY/FAMILIAL NEPHROPATHY-TYPE UNSPECIFIED 251 - 251 HEREDITARY NEPHRITIS WITH NERVE DEAFNESS (ALPORTS SYNDROME) 252 - 252 CYSTINOSIS 253 - 253 PRIMARY OXALOSIS 254 - 254 FABRY'S DISEASE 259 - 259 HEREDITARY NEPHROPATHY-OTHER 260 - 260 CONGENITAL RENAL HYPOPLASIA - TYPE UNSPECIFIED 261 - 261 OLIGOMEGANEPHRONIC HYPOPLASIA 262 - 262 SEGMENTAL RENAL HYPOPLASIA 263 - 263 CONGENITAL RENAL DYSPLASIA +/- URINARY TRACT MALFORMATION 266 - 266 SYNDROME OF AGENESIS OF ABDOMINAL MUSCLES 270 - 270 RENAL VASCULAR DISEASE-TYPE UNSPECIFIED 271 - 271 RENAL VASCULAR DISEASE-MALIGNANT HYPERTENSION 272 - 272 RENAL VASCULAR DISEASE-HYPERTENSION 273 - 273 RENAL VASCULAR DISEASE-POLYARTERITIS 274 - 274 WEGENER'S GRANULOMATOSIS 275 - 275 ISCHAEMIC RENAL DISEASE/CHOLESTEROL EMBOLISM 276 - 276 GLOMERULONEPHRITIS RELATED TO LIVER CIRRHOSIS 278 - 278 CRYOGLOBULINEMIC GLOMERULONEPHRITIS 279 - 279 RENAL VASCULAR DISEASE-CLASSIFIED 280 - 280 DIABETES-INSULIN DEPENDENT (TYPE I) 281 - 281 DIABETES-NON-INSULIN DEPENDENT (TYPE II) 282 - 282 MYELOMATOSIS/LIGHT CHAIN DEPOSIT DISEASE 283 - 283 AMYLOID 284 - 284 LUPUS ERYTHEMATOSUS 285 - 285 HENOCH-SCHONLEIN PURPURA 286 - 286 GOODPASTURE'S SYNDROME 287 - 287 SYSTEMIC SCLEROSIS (SCLERODERMA) 288 - 288 HAEMOLYTIC URAEMIC SYNDROME (INC MOSCHOWITZ SYNDROME) 289 - 289 MULTI-SYSTEM DISEASE - OTHER 290 - 290 CORTICAL OR TUBULAR NECROSIS 291 - 291 TUBERCULOSIS 292 - 292 GOUT 293 - 293 NEPHROCALCINOSIS AND HYPERCALCAEMIC NEPHROPATHY 294 - 294 BALKAN NEPHROPATHY 295 - 295 KIDNEY TUMOUR 296 - 296 TRAUMATIC OR SURGICAL LOSS OF KIDNEY 298 - 298 OTHER DISEASE 299 - 299 UNKNOWN 888 - 888 NOT REPORTED</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="200" /> 
+  <xs:enumeration value="210" /> 
+  <xs:enumeration value="211" /> 
+  <xs:enumeration value="212" /> 
+  <xs:enumeration value="213" /> 
+  <xs:enumeration value="214" /> 
+  <xs:enumeration value="215" /> 
+  <xs:enumeration value="216" /> 
+  <xs:enumeration value="217" /> 
+  <xs:enumeration value="219" /> 
+  <xs:enumeration value="220" /> 
+  <xs:enumeration value="221" /> 
+  <xs:enumeration value="222" /> 
+  <xs:enumeration value="223" /> 
+  <xs:enumeration value="224" /> 
+  <xs:enumeration value="225" /> 
+  <xs:enumeration value="229" /> 
+  <xs:enumeration value="230" /> 
+  <xs:enumeration value="231" /> 
+  <xs:enumeration value="232" /> 
+  <xs:enumeration value="233" /> 
+  <xs:enumeration value="234" /> 
+  <xs:enumeration value="239" /> 
+  <xs:enumeration value="240" /> 
+  <xs:enumeration value="241" /> 
+  <xs:enumeration value="242" /> 
+  <xs:enumeration value="243" /> 
+  <xs:enumeration value="249" /> 
+  <xs:enumeration value="250" /> 
+  <xs:enumeration value="251" /> 
+  <xs:enumeration value="252" /> 
+  <xs:enumeration value="253" /> 
+  <xs:enumeration value="254" /> 
+  <xs:enumeration value="259" /> 
+  <xs:enumeration value="260" /> 
+  <xs:enumeration value="261" /> 
+  <xs:enumeration value="262" /> 
+  <xs:enumeration value="263" /> 
+  <xs:enumeration value="266" /> 
+  <xs:enumeration value="270" /> 
+  <xs:enumeration value="271" /> 
+  <xs:enumeration value="272" /> 
+  <xs:enumeration value="273" /> 
+  <xs:enumeration value="274" /> 
+  <xs:enumeration value="275" /> 
+  <xs:enumeration value="276" /> 
+  <xs:enumeration value="278" /> 
+  <xs:enumeration value="279" /> 
+  <xs:enumeration value="280" /> 
+  <xs:enumeration value="281" /> 
+  <xs:enumeration value="282" /> 
+  <xs:enumeration value="283" /> 
+  <xs:enumeration value="284" /> 
+  <xs:enumeration value="285" /> 
+  <xs:enumeration value="286" /> 
+  <xs:enumeration value="287" /> 
+  <xs:enumeration value="288" /> 
+  <xs:enumeration value="289" /> 
+  <xs:enumeration value="290" /> 
+  <xs:enumeration value="291" /> 
+  <xs:enumeration value="292" /> 
+  <xs:enumeration value="293" /> 
+  <xs:enumeration value="294" /> 
+  <xs:enumeration value="295" /> 
+  <xs:enumeration value="296" /> 
+  <xs:enumeration value="298" /> 
+  <xs:enumeration value="299" /> 
+  <xs:enumeration value="888" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="blood_group">
+  <xs:annotation>
+  <xs:documentation source="coding_note">0 - O 1 - A 2 - A1 3 - A2 4 - B 5 - AB 6 - A1B 7 - A2B 8 - MISSING 9 - UNKNOWN 10 - NOT TESTED</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="0" /> 
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="3" /> 
+  <xs:enumeration value="4" /> 
+  <xs:enumeration value="5" /> 
+  <xs:enumeration value="6" /> 
+  <xs:enumeration value="7" /> 
+  <xs:enumeration value="8" /> 
+  <xs:enumeration value="9" /> 
+  <xs:enumeration value="10" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="rhesus">
+  <xs:annotation>
+  <xs:documentation source="coding_note">1 - POSITIVE (+) 2 - NEGATIVE (-) 9 - UNKNOWN 10 - NOT TESTED</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="9" /> 
+  <xs:enumeration value="10" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="yes_no_only_flag">
+  <xs:annotation>
+  <xs:documentation source="coding_note">1 - 1 NO 2 - 2 YES 8 - 8 NOT REPORTED</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="8" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ethnic_origin">
+  <xs:annotation>
+  <xs:documentation source="coding_note">1 - 1 WHITE 2 - 2 ASIAN OR ASIAN-BRITISH 3 - 3 BLACK OR BLACK-BRITISH 4 - 4 CHINESE/ORIENTAL 6 - 6 MIXED - PLEASE SPECIFY 7 - 7 OTHER - PLEASE SPECIFY 8 - 8 NOT REPORTED 9 - 9 UNKNOWN</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="3" /> 
+  <xs:enumeration value="4" /> 
+  <xs:enumeration value="6" /> 
+  <xs:enumeration value="7" /> 
+  <xs:enumeration value="8" /> 
+  <xs:enumeration value="9" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="note_text_type">
+  <xs:restriction base="xs:string">
+  <xs:maxLength value="400" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="date_type">
+  <xs:restriction base="xs:string">
+  <xs:maxLength value="10" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="reaction_freq">
+  <xs:restriction base="xs:float" /> 
+  </xs:simpleType>
+  <xs:simpleType name="antibody_class">
+  <xs:annotation>
+  <xs:documentation source="coding_note">1 - 1 IgG 2 - 2 IgM 3 - 3 IgG/M 4 - 4 NOT DEFINED 8 - 8 MISSING ANTIBODY 9 - 9 UNKNOWN ANTIBODY</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="3" /> 
+  <xs:enumeration value="4" /> 
+  <xs:enumeration value="8" /> 
+  <xs:enumeration value="9" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="yes_no_flag">
+  <xs:annotation>
+  <xs:documentation source="coding_note">1 - 1-NO 2 - 2-YES 8 - 8-NOT REPORTED 9 - 9-UNKNOWN</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="8" /> 
+  <xs:enumeration value="9" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="residual_number">
+  <xs:restriction base="xs:float" /> 
+  </xs:simpleType>
+  <xs:complexType name="hla_type">
+  <xs:all>
+  <xs:element name="tissue_type" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="phenotype_determined" type="hla_yes_no_unknown_flag" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">phenotype_determined</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hla_a1" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_a1 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_a2" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_a2 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_b1" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_b1 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_b2" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_b2 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_bw4" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_bw4</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hla_bw6" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_bw6</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hla_dr1" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dr1 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_dr2" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dr2 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_dr51" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dr51</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hla_dr52" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dr52</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hla_dr53" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dr53</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hla_dr51_null" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dr51_null</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hla_dr53_null" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dr53_null</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="hla_c1" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_cw1 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_c2" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_cw2 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_dq1" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dq1 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_dq2" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dq2 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_drb3_1" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb3_1 allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="fuzzy_allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb3_1 fuzzy_allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_drb3_2" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb3_2 allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="fuzzy_allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb3_2 fuzzy_allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_drb4_1" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb4_1 allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="fuzzy_allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb4_1 fuzzy_allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_drb4_2" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb4_2 allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="fuzzy_allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb4_2 fuzzy_allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_drb5_1" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb5_1 allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="fuzzy_allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb5_1 fuzzy_allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_drb5_2" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb5_2 allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="fuzzy_allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_drb5_2 fuzzy_allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="others" minOccurs="0">
+  <xs:complexType>
+  <xs:sequence>
+  <xs:element name="other" minOccurs="0" maxOccurs="1">
+  <xs:annotation>
+  <xs:documentation source="element_note">other 550</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:sequence>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_dp1" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dp1 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="hla_dp2" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="antigens" type="antigensType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dp2 antigens</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="other_hla" minOccurs="0">
+  <xs:complexType>
+  <xs:all>
+  <xs:element name="unaccep_phenotype_determined" type="hla_yes_no_unknown_flag" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">unaccep_phenotype_determined</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="antibody_defined_group" minOccurs="0">
+  <xs:complexType>
+  <xs:sequence>
+  <xs:element name="antibody_defined_entity" minOccurs="0" maxOccurs="1">
+  <xs:annotation>
+  <xs:documentation source="element_note">antibody_defined_entity 591</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:sequence>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="other_group" minOccurs="0">
+  <xs:complexType>
+  <xs:sequence>
+  <xs:element name="other_entity" minOccurs="0" maxOccurs="1">
+  <xs:annotation>
+  <xs:documentation source="element_note">antibody_defined_entity 763</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:sequence>
+  </xs:complexType>
+  </xs:element>
+  <xs:element name="match_grade" type="matchGradeType" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">match_grade</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  <xs:simpleType name="hla_yes_no_unknown_flag">
+  <xs:annotation>
+  <xs:documentation source="coding_note">1 - 1 NO 2 - 2 YES 9 - 9 UNKNOWN</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="1" /> 
+  <xs:enumeration value="2" /> 
+  <xs:enumeration value="9" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="matchGradeType">
+  <xs:annotation>
+  <xs:documentation source="coding_note">3 - 3 ***1 4 - 4 ***2 5 - 5 ***3 6 - 6 ***4 7 - 7 ***5 10 - 10 **01 11 - 11 **02 12 - 12 **03 14 - 14 **11 15 - 15 **12 16 - 16 **13 18 - 18 **21 19 - 19 **22 20 - 20 **23 23 - 23 *0*1 27 - 27 *1*1 28 - 28 *1*2 29 - 29 *1*3 33 - 33 0**1 34 - 34 0**2 36 - 36 0000 38 - 38 0010 40 - 40 0020 42 - 42 0100 44 - 44 0110 45 - 45 0120 46 - 46 1**1 47 - 47 1**2 48 - 48 1**3 51 - 51 1000 52 - 52 1010 53 - 53 1020 54 - 54 1100 55 - 55 1110 56 - 56 1120 57 - 57 1200 58 - 58 1210 59 - 59 1220 63 - 63 2**1 64 - 64 2**2 65 - 65 2**3 67 - 67 2000 68 - 68 2010 69 - 69 2020 70 - 70 2100 72 - 72 2110 74 - 74 2120 78 - 78 2200 81 - 81 2210 85 - 85 2220 90 - 90 9999</xs:documentation> 
+  </xs:annotation>
+  <xs:restriction base="xs:string">
+  <xs:enumeration value="3" /> 
+  <xs:enumeration value="4" /> 
+  <xs:enumeration value="5" /> 
+  <xs:enumeration value="6" /> 
+  <xs:enumeration value="7" /> 
+  <xs:enumeration value="10" /> 
+  <xs:enumeration value="11" /> 
+  <xs:enumeration value="12" /> 
+  <xs:enumeration value="14" /> 
+  <xs:enumeration value="15" /> 
+  <xs:enumeration value="16" /> 
+  <xs:enumeration value="18" /> 
+  <xs:enumeration value="19" /> 
+  <xs:enumeration value="20" /> 
+  <xs:enumeration value="23" /> 
+  <xs:enumeration value="27" /> 
+  <xs:enumeration value="28" /> 
+  <xs:enumeration value="29" /> 
+  <xs:enumeration value="33" /> 
+  <xs:enumeration value="34" /> 
+  <xs:enumeration value="36" /> 
+  <xs:enumeration value="38" /> 
+  <xs:enumeration value="40" /> 
+  <xs:enumeration value="42" /> 
+  <xs:enumeration value="44" /> 
+  <xs:enumeration value="45" /> 
+  <xs:enumeration value="46" /> 
+  <xs:enumeration value="47" /> 
+  <xs:enumeration value="48" /> 
+  <xs:enumeration value="51" /> 
+  <xs:enumeration value="52" /> 
+  <xs:enumeration value="53" /> 
+  <xs:enumeration value="54" /> 
+  <xs:enumeration value="55" /> 
+  <xs:enumeration value="56" /> 
+  <xs:enumeration value="57" /> 
+  <xs:enumeration value="58" /> 
+  <xs:enumeration value="59" /> 
+  <xs:enumeration value="63" /> 
+  <xs:enumeration value="64" /> 
+  <xs:enumeration value="65" /> 
+  <xs:enumeration value="67" /> 
+  <xs:enumeration value="68" /> 
+  <xs:enumeration value="69" /> 
+  <xs:enumeration value="70" /> 
+  <xs:enumeration value="72" /> 
+  <xs:enumeration value="74" /> 
+  <xs:enumeration value="78" /> 
+  <xs:enumeration value="81" /> 
+  <xs:enumeration value="85" /> 
+  <xs:enumeration value="90" /> 
+  </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="antigensType">
+  <xs:all>
+  <xs:element name="broad" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dp2 broad</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="split" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dp2 split</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dp2 allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  <xs:element name="fuzzy_allele" minOccurs="0">
+  <xs:annotation>
+  <xs:documentation source="element_note">hla_dp2 fuzzy_allele</xs:documentation> 
+  </xs:annotation>
+  </xs:element>
+  </xs:all>
+  </xs:complexType>
+  </xs:schema>

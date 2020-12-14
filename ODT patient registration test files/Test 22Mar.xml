@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ntxd_kidney_pancreas_registration xmlns:ns1="http://www.uktransplant.org.uk/XMLschema/forms/160/internal/1.0">
+	<recip_id>54321</recip_id>
+	<centre_code>LEICESTER, LEICESTER GENERAL HOSPITAL, C0301</centre_code>
+	<surname>TestLast</surname>
+	<forename>TestFirst</forename>
+	<hospital_no>123456</hospital_no>
+	<date_of_birth>32874</date_of_birth>
+	<sex>F</sex>
+	<cmv_status>2-POSITIVE</cmv_status>
+	<hcv_status>1-NEGATIVE</hcv_status>
+	<hbv_status>1-NEGATIVE</hbv_status>
+	<hiv_status>1-NEGATIVE</hiv_status>
+	<group_status>1-GROUP 1</group_status>
+	<nationality>UNITED KINGDOM</nationality>
+	<country_of_residence>UNITED KINGDOM</country_of_residence>
+	<nhs_number>123456789</nhs_number>
+	<kidney_status>12 ACTIVE - ROUTINE</kidney_status>
+	<organ_required>110 KIDNEY</organ_required>
+	<weight_of_recipient_in_kg>65</weight_of_recipient_in_kg>
+	<height_of_recipient_in_cm>160</height_of_recipient_in_cm>
+	<dialysis_status>1-HAEMODIALYSIS</dialysis_status>
+	<receiving_dialysis_start_date>43530</receiving_dialysis_start_date>
+	<dialysis_centre_code>HC0301</dialysis_centre_code>
+	<primary_disease_code>200</primary_disease_code>
+	<other_primary_disease>200</other_primary_disease>
+	<blood_group>AB</blood_group>
+	<rhesus>NEGATIVE (-)</rhesus>
+	<ethnic_origin>2 ASIAN OR ASIAN-BRITISH</ethnic_origin>
+	<cdc>1-NO</cdc>
+	<fc>1-YES</fc>
+	<elisa>1-NO</elisa>
+	<antibody_class_t_cells>1-IgG</antibody_class_t_cells>
+	<antibody_class_b_cells>1-IgG</antibody_class_b_cells>
+	<do_the_hla_in_sec_5_account>2-YES</do_the_hla_in_sec_5_account>
+	<hla>
+		<tissue_type>
+			<phenotype_determined>2-YES</phenotype_determined>
+			<hla_a1>
+				<antigens>
+					<broad>9</broad>
+					<split>23</split>
+				</antigens>
+			</hla_a1>
+			<hla_a2>
+				<antigens>
+					<broad>9</broad>
+					<split>24</split>
+				</antigens>
+			</hla_a2>
+			<hla_b1>
+				<antigens>
+					<broad>15</broad>
+					<split>62</split>
+				</antigens>
+			</hla_b1>
+			<hla_b2>
+				<antigens>
+					<broad>12</broad>
+					<split>44</split>
+				</antigens>
+			</hla_b2>
+			<hla_bw4>4</hla_bw4>
+			<hla_bw6>6</hla_bw6>
+			<hla_dr1>
+				<antigens>
+					<broad>2</broad>
+					<split>15</split>
+				</antigens>
+			</hla_dr1>
+			<hla_dr2>
+				<antigens>
+					<broad>6</broad>
+					<split>13</split>
+				</antigens>
+			</hla_dr2>
+			<hla_dr51>51</hla_dr51>
+			<hla_dr52>52</hla_dr52>
+			<hla_c1>
+				<antigens>
+					<broad>3</broad>
+					<split>10</split>
+				</antigens>
+			</hla_c1>
+			<hla_c2>
+				<antigens>
+					<broad>5</broad>
+				</antigens>
+			</hla_c2>
+			<hla_dq1>
+				<antigens>
+					<broad>1</broad>
+					<split>5</split>
+				</antigens>
+			</hla_dq1>
+			<hla_dq2>
+				<antigens>
+					<broad>1</broad>
+					<split>6</split>
+				</antigens>
+			</hla_dq2>
+			<hla_drb3_1/>
+			<hla_drb3_2/>
+			<hla_drb4_1/>
+			<hla_drb4_2/>
+			<hla_drb5_1/>
+			<hla_drb5_2/>
+			<others/>
+			<hla_dp1>
+				<antigens>
+					<broad>4</broad>
+					<allele>04:01</allele>
+				</antigens>
+			</hla_dp1>
+			<hla_dp2>
+				<antigens>
+					<allele>04:02</allele>
+				</antigens>
+			</hla_dp2>
+		</tissue_type>
+		<other_hla>
+			<unaccep_phenotype_determined>2-YES</unaccep_phenotype_determined>
+			<antibody_defined_group>
+				<antibody_defined_entity>A36 A69 A74
+B13 B49
+Cw8 Cw10 Cw13 DR17 DR18
+DRw53
+DQ4
+DP10 DP11</antibody_defined_entity>
+			</antibody_defined_group>
+			<other_group/>
+			<match_grade>08-2220</match_grade>
+		</other_hla>
+	</hla>
+</ntxd_kidney_pancreas_registration>
