@@ -1,2 +1,2 @@
 # HistoTrac-SQL-queries
-HistoTrac Report Dictionary queries to generate Crystal Reports
+HistoTrac Report Dictionary queries for CR
