@@ -1,0 +1,2 @@
+/*Main*/
+Select  patient.lastnm, patient.firstnm, patient.dob, patient.hospitalid, sample.specimentypecd, sample.sampledt, isnull(test.testtypecd,'') TestTypeCd from sample inner join patient on patient.patientid = sample.patientid left join test on test.sampleid = sample.sampleid where patient.unosactivatedind = '1'  order by patient.lastnm asc, patient.firstnm asc, sample.sampledt desc
